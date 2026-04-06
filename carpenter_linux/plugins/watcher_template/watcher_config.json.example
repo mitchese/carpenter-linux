@@ -1,0 +1,9 @@
+{
+  "shared_folder": "/path/to/shared-folder",
+  "command": ["echo", "Replace this with your tool command"],
+  "prompt_mode": "stdin",
+  "heartbeat_interval": 10,
+  "poll_interval": 1,
+  "timeout_seconds": 600,
+  "log_level": "INFO"
+}

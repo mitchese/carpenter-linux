@@ -1,0 +1,13 @@
+[Unit]
+Description=Carpenter Plugin Watcher (%i)
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 %h/.config/carpenter/watchers/%i/watcher.py %h/.config/carpenter/watchers/%i/watcher_config.json
+Restart=on-failure
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

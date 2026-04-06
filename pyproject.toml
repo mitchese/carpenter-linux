@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carpenter-linux"
+version = "0.1.0"
+description = "Linux platform package for Carpenter AI Agent Platform"
+requires-python = ">=3.11"
+dependencies = [
+    "carpenter-ai @ git+https://rainbow-forge.duckdns.org:3000/ben-harack/carpenter-core.git",
+]
+
+[tool.setuptools.packages.find]
+include = ["carpenter_linux*"]
